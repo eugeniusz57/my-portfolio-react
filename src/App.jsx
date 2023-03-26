@@ -4,6 +4,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import Navbar from "./scenes/Navbar";
+import Projects from "./scenes/Projects";
 import Skills from "./scenes/Skills";
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
         <Skills />
       </div>
       <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Projects />
+      </div>
     </div>
   );
 }
