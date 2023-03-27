@@ -2,6 +2,9 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
 const Opinions = () => {
+  const opinionsStyle =
+    "mx-auto relative  max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2";
+
   return (
     <section id="opinions" className="pt-32 pb-16">
       <motion.div
@@ -19,7 +22,7 @@ const Opinions = () => {
           Opinions
         </p>
         <LineGradient width="mx-auto w-2/5" />
-        <p className="mt-10">
+        <p className="mt-10 ">
           Here's What People are Saying About My Work. Aliquam aliquet integer
           ut fames odio in at. At magna ornare dictum lectus.
         </p>
@@ -27,8 +30,7 @@ const Opinions = () => {
       {/* Opinions */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
+          className={`bg-blue  before:content-person1 ${opinionsStyle}`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -39,14 +41,13 @@ const Opinions = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
+          <p className="text-center text-xl text-black">
             A auctor pharetra hendrerit mattis amet etiam interdum platea.
           </p>
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
+          className={`bg-yellow  before:content-person2 ${opinionsStyle}`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -57,14 +58,13 @@ const Opinions = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
+          <p className="text-center text-xl text-black">
             A auctor pharetra hendrerit mattis amet etiam interdum platea.
           </p>
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
+          className={`bg-red  before:content-person3 ${opinionsStyle}`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -75,7 +75,7 @@ const Opinions = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
+          <p className="text-center text-xl text-black">
             A auctor pharetra hendrerit mattis amet etiam interdum platea.
           </p>
         </motion.div>
