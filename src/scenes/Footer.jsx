@@ -10,7 +10,6 @@ const Footer = () => {
             Yevhenii Kavetskyi
           </p>
           <p className="font-playfair text-md text-yellow">
-            {" "}
             ©2023 Yevhenii. All Rights Reserved.
           </p>
         </div>
